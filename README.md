@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Heedhive HR Dashboard
 
 A full-stack HR Attendance & Analytics Management System built for **[Heedhive Agency](https://heedhive.in/)** — a digital marketing, SEO & web development company based in India.
@@ -134,3 +135,8 @@ npm run dev
 ---
 
 *Built for Heedhive Agency, Tirunelveli, Tamil Nadu, India*
+=======
+# heedhive-hr-dashboard
+Full-stack HR Attendance &amp; Analytics Dashboard built for Heedhive Agency
+Working on it finish in 2day 
+>>>>>>> 09ffd4a86ac77b6de6d2b82d9dd96d4b3b7a44b5
