@@ -33,41 +33,41 @@ export default function Login() {
         {/* Gold glow */}
         <div style={{
           position:'absolute', inset:-1, borderRadius:18,
-          background:'linear-gradient(135deg, #f5a623, #c47d0a, #f5a623)',
+          background:'linear-gradient(135deg, #D4AF37, #B8960C, #D4AF37)',
           opacity:0.2, filter:'blur(10px)',
         }} />
 
         <div style={{
           position:'relative', background:'#0a0a0a',
-          border:'1.5px solid #f5a623', borderRadius:16,
+          border:'1.5px solid #D4AF37', borderRadius:16,
           padding:'2.8rem 2.2rem',
-          boxShadow:'0 0 40px rgba(245,166,35,0.1)',
+          boxShadow:'0 0 40px rgba(212,175,55,0.1)',
         }}>
           {/* Logo */}
           <div style={{ textAlign:'center', marginBottom:'1.8rem' }}>
-            <div style={{ fontSize:34, fontWeight:900, letterSpacing:'-1px', color:'#f5a623' }}>
+            <div style={{ fontSize:34, fontWeight:900, letterSpacing:'-1px', color:'#D4AF37' }}>
               HeedHive
             </div>
-            <div style={{ width:48, height:2, background:'linear-gradient(90deg,#f5a623,#c47d0a)', borderRadius:2, margin:'10px auto' }} />
+            <div style={{ width:48, height:2, background:'linear-gradient(90deg,#D4AF37,#B8960C)', borderRadius:2, margin:'10px auto' }} />
             <div style={{ fontSize:13, color:'#ffffff', fontWeight:500, letterSpacing:'0.5px' }}>
               HR & Attendance Portal
             </div>
           </div>
 
           {/* Email */}
-          <label style={{ fontSize:11, color:'#f5a623', fontWeight:600, display:'block', marginBottom:6, textTransform:'uppercase', letterSpacing:'0.8px' }}>
+          <label style={{ fontSize:11, color:'#D4AF37', fontWeight:600, display:'block', marginBottom:6, textTransform:'uppercase', letterSpacing:'0.8px' }}>
             Work Email
           </label>
           <input
             type="email" placeholder="hr@heedhive.in" value={email}
             onChange={e => setEmail(e.target.value)} required
             style={{ width:'100%', background:'#111', border:'1px solid #2a2a2a', borderRadius:8, padding:'11px 14px', color:'#ffffff', fontSize:14, outline:'none', fontFamily:'inherit', marginBottom:16, boxSizing:'border-box' }}
-            onFocus={e => e.target.style.borderColor='#f5a623'}
+            onFocus={e => e.target.style.borderColor='#D4AF37'}
             onBlur={e => e.target.style.borderColor='#2a2a2a'}
           />
 
           {/* Password */}
-          <label style={{ fontSize:11, color:'#f5a623', fontWeight:600, display:'block', marginBottom:6, textTransform:'uppercase', letterSpacing:'0.8px' }}>
+          <label style={{ fontSize:11, color:'#D4AF37', fontWeight:600, display:'block', marginBottom:6, textTransform:'uppercase', letterSpacing:'0.8px' }}>
             Password
           </label>
           <input
@@ -75,7 +75,7 @@ export default function Login() {
             onChange={e => setPassword(e.target.value)} required
             onKeyDown={e => e.key==='Enter' && handleLogin(e)}
             style={{ width:'100%', background:'#111', border:'1px solid #2a2a2a', borderRadius:8, padding:'11px 14px', color:'#ffffff', fontSize:14, outline:'none', fontFamily:'inherit', marginBottom:20, boxSizing:'border-box' }}
-            onFocus={e => e.target.style.borderColor='#f5a623'}
+            onFocus={e => e.target.style.borderColor='#D4AF37'}
             onBlur={e => e.target.style.borderColor='#2a2a2a'}
           />
 
@@ -85,11 +85,11 @@ export default function Login() {
           <button
             onClick={handleLogin} disabled={loading}
             style={{
-              width:'100%', background:'linear-gradient(135deg, #f5a623, #c47d0a)',
+              width:'100%', background:'linear-gradient(135deg, #D4AF37, #B8960C)',
               color:'#000000', border:'none', borderRadius:8, padding:'13px',
               fontSize:15, fontWeight:800, cursor: loading ? 'not-allowed':'pointer',
               fontFamily:'inherit', letterSpacing:'0.5px',
-              boxShadow:'0 4px 20px rgba(245,166,35,0.35)',
+              boxShadow:'0 4px 20px rgba(212,175,55,0.35)',
               opacity: loading ? 0.75 : 1,
             }}
           >
@@ -97,7 +97,7 @@ export default function Login() {
           </button>
 
           <div style={{ textAlign:'center', marginTop:'1.6rem', fontSize:11, color:'#333' }}>
-            © 2025 <span style={{ color:'#f5a623' }}>Heedhive Agency</span> · All rights reserved
+            © 2025 <span style={{ color:'#D4AF37' }}>Heedhive Agency</span> · All rights reserved
           </div>
         </div>
       </div>
