@@ -57,30 +57,35 @@ export default function Login() {
           boxShadow:`0 0 50px ${GLOW_DIM}, inset 0 1px 0 rgba(201,168,76,0.1)`,
         }}>
 
-          {/* Logo image */}
-          <div style={{ textAlign:'center', marginBottom:'1.6rem' }}>
+          {/* Logo + Name side by side */}
+          <div style={{ display:'flex', alignItems:'center', gap:16, marginBottom:'1.8rem' }}>
             <img
               src="/logo.png"
               alt="Heedhive Logo"
               style={{
-                width:100, height:100, borderRadius:'50%',
-                objectFit:'cover',
+                width:90, height:90, borderRadius:'50%',
+                objectFit:'cover', flexShrink:0,
                 boxShadow:`0 0 24px ${GLOW}, 0 0 8px ${GLOW}`,
                 border:`2px solid ${GOLD}`,
-                marginBottom:14,
               }}
             />
-            {/* Divider */}
-            <div style={{
-              width:60, height:1.5, margin:'0 auto 12px',
-              background:`linear-gradient(90deg, transparent, ${GOLD2}, ${GOLD}, ${GOLD2}, transparent)`,
-              boxShadow:`0 0 6px ${GLOW}`,
-            }} />
-            <div style={{
-              fontSize:13, color:'#ffffff', fontWeight:400,
-              letterSpacing:'2px', textTransform:'uppercase', opacity:0.85,
-            }}>
-              HR &amp; Attendance Portal
+            <div>
+              <div style={{
+                fontSize:28, fontWeight:900, letterSpacing:'1px',
+                background:`linear-gradient(180deg, ${GOLD2} 0%, ${GOLD} 60%, ${GOLD3} 100%)`,
+                WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent',
+                lineHeight:1.1, textTransform:'uppercase',
+              }}>
+                HeedHive
+              </div>
+              <div style={{
+                width:40, height:1.5, margin:'6px 0',
+                background:`linear-gradient(90deg, ${GOLD}, transparent)`,
+                boxShadow:`0 0 6px ${GLOW}`,
+              }} />
+              <div style={{ fontSize:11, color:'#ffffff', letterSpacing:'1.5px', textTransform:'uppercase', opacity:0.7 }}>
+                HR &amp; Attendance Portal
+              </div>
             </div>
           </div>
 
