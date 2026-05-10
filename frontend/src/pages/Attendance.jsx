@@ -118,8 +118,8 @@ export default function Attendance() {
                       ))}
                     </div>
                   </td>
-                  <td style={{ padding:'10px 12px', color:'#555', fontSize:12' }}>{r.check_in || '—'}</td>
-                  <td style={{ padding:'10px 12px', color:'#555', fontSize:12' }}>{r.check_out || '—'}</td>
+                  <td style={{ padding:'10px 12px', color:'#555', fontSize:12 }}>{r.check_in || '—'}</td>
+                  <td style={{ padding:'10px 12px', color:'#555', fontSize:12 }}>{r.check_out || '—'}</td>
                 </tr>
               ))}
             </tbody>
