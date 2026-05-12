@@ -9,13 +9,22 @@ from routes.attendance import attendance_bp
 app = Flask(__name__)
 app.config.from_object(Config)
 
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app, resources={r"/api/*": {
+    "origins": [
+        "https://heedhive-hr-dashboard.vercel.app",
+        "https://*.vercel.app",
+        "http://localhost:3000",
+        "http://localhost:5173",
+    ],
+    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    "allow_headers": ["Content-Type", "Authorization"]
+}})
+
 JWTManager(app)
 
-# Register blueprints
-app.register_blueprint(auth_bp,        url_prefix='/api/auth')
-app.register_blueprint(employees_bp,   url_prefix='/api/employees')
-app.register_blueprint(attendance_bp,  url_prefix='/api/attendance')
+app.register_blueprint(auth_bp,       url_prefix='/api/auth')
+app.register_blueprint(employees_bp,  url_prefix='/api/employees')
+app.register_blueprint(attendance_bp, url_prefix='/api/attendance')
 
 @app.route('/')
 def index():
