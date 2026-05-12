@@ -9,16 +9,7 @@ from routes.attendance import attendance_bp
 app = Flask(__name__)
 app.config.from_object(Config)
 
-CORS(app, resources={r"/api/*": {
-    "origins": [
-        "https://heedhive-hr-dashboard.vercel.app",
-        "https://*.vercel.app",
-        "http://localhost:3000",
-        "http://localhost:5173",
-    ],
-    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    "allow_headers": ["Content-Type", "Authorization"]
-}})
+CORS(app, origins="*", supports_credentials=True)
 
 JWTManager(app)
 

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({ 
-  baseURL: 'https://heedhive-hr-dashboard-1.onrender.com'
+  baseURL: 'https://heedhive-hr-dashboard-1.onrender.com/api'
 })
 
 api.interceptors.request.use(config => {
