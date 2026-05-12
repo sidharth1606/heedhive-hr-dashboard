@@ -1,10 +1,12 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: import.meta.env.VITE_API_URL || '/api' })
+const api = axios.create({ 
+  baseURL: 'https://heedhive-hr-dashboard-1.onrender.com'
+})
 
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('hh_token')
-  if (token) config.headers.Authorization = Bearer \
+  if (token) config.headers.Authorization = `Bearer ${token}`
   return config
 })
 
