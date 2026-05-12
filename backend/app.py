@@ -9,7 +9,7 @@ from routes.attendance import attendance_bp
 app = Flask(__name__)
 app.config.from_object(Config)
 
-CORS(app, origins="*", supports_credentials=True)
+CORS(app, origins="*")
 
 JWTManager(app)
 
