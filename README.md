@@ -136,7 +136,7 @@ npm run dev
 
 *Built for Heedhive Agency, Tirunelveli, Tamil Nadu, India*
 =======
-# heedhive-hr-dashboard
-Full-stack HR Attendance &amp; Analytics Dashboard built for Heedhive Agency
-Working on it finish in 2day 
->>>>>>> 09ffd4a86ac77b6de6d2b82d9dd96d4b3b7a44b5
+# heedhive-hr-Login
+
+<img width="958" height="479" alt="image" src="https://github.com/user-attachments/assets/c8d149dd-f2c9-49b2-ad36-dbbe7ab7e62b" />
+
